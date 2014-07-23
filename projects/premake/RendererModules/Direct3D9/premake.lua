@@ -13,7 +13,7 @@ package.files =
 include(rootdir.."cegui/include/"..pkgdir)
 include(rootdir)
 
-library("dxerr")
+library("dxerr9")
 library("d3dx9", "d")
 
 dependency("CEGUIBase")

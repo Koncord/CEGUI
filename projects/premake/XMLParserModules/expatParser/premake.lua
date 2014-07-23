@@ -12,8 +12,8 @@ package.files =
 
 include(rootdir.."cegui/include/"..pkgdir)
 
-library("expat", "_d")
-library_static("expat","","_d")
+library("expat", "")
+library_static("expat","","")
 
 dependency("CEGUIBase")
 

@@ -12,7 +12,7 @@ package.files =
 
 include(rootdir.."cegui/include/"..pkgdir)
 
-library("SILLY", "_d")
+library("SILLY", "")
 
 dependency("CEGUIBase")
 define("CEGUISILLYIMAGECODEC_EXPORTS")

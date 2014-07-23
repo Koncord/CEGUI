@@ -27,13 +27,13 @@ end
 if not CEGUI_USE_FREETYPE then
     tinsert(package.excludes, rootdir.."cegui/src/CEGUIFreeTypeFont.cpp")
 else
-    library("freetype","_D")
+    library("freetype","")
 end
 
 if not CEGUI_USE_PCRE_REGEX then
     tinsert(package.excludes, rootdir.."cegui/src/CEGUIPCRERegexMatcher.cpp")
 else
-    library("pcre", "_d")
+    library("pcre", "")
     define("PCRE_STATIC")
 end
 
@@ -54,9 +54,9 @@ if not MINIZIP_RESOURCE_PROVIDER then
 else
     tinsert(package.files, matchfiles(rootdir.."cegui/src/minizip/*.cpp"))
     tinsert(package.files, matchfiles(rootdir.."cegui/src/minizip/*.h"))
-    library("zlib", "_d")
+    library("zlib", "")
 end
 
 library("Winmm", "")
-
+library("shlwapi","")
 define("CEGUIBASE_EXPORTS")

@@ -18,7 +18,7 @@ STATIC_BUILD_WITH_DYNAMIC_DEPS = false
 -- comment this to disable debug suffixes for dynamic module dlls
 -- if you want to use another suffix, just change the string :)
 -- all the debug cegui libraries are built with this suffix
-DEBUG_DLL_SUFFIX = "_d"
+DEBUG_DLL_SUFFIX = ""
 
 -- Iterator debugging setting
 --
@@ -114,7 +114,7 @@ CEGUI_USE_MINIBIDI = true;
 ---
 --- The MinizipResourceProvider enables resources to be loaded from a zip compressed
 --- archive.
-MINIZIP_RESOURCE_PROVIDER = true
+MINIZIP_RESOURCE_PROVIDER = false
 
 -------------
 -- Renderers
